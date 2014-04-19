@@ -1,0 +1,7 @@
+10/04/2014
+-layer toolbar dijadiin paling atas
+-ujicoba berbagai ukuran layar
+-segerakan mobile ukuran
+-icon web
+-meta data open graph, twitter
+-ukuran vertikal layar

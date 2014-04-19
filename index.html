@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sanggar Idebeda</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/rwdgrid.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!-- Add your site or application content here -->
+        <div id="logo"><a href=""><img src="img/logo.png" id="img-logo"></a></div>
+		<div class="menu" id="sticky-menu">
+			<div id="logo-menu" style="display:none"><a href="" ><img src="img/logo-kecil.png" /></a></div>
+			<div class="list-menu"><a href="#">Beranda</a></div>
+			<div class="list-menu"><a href="#">Produk</a></div>
+			<div class="list-menu"><a href="#">Kontak</a></div>
+			<div style="clear:both"></div>
+		</div>
+		<div style="clear:both"></div>
+		<div id="header2"></div>
+        <div class="judul konten-atas" id="hai">
+            <div class="tengah-judul">hai apa kabar?</div>
+        </div>
+        <div class="container-12">
+            <div class="grid-9" style="background: #000000;">
+                <div id="vidplayer">
+					<!--iframe width="700" height="400" src="//www.youtube.com/embed/37CZ7eY-kcM" frameborder="0"></iframe-->
+                </div>
+            </div>
+            <div class="grid-3">
+                <div id="kotak-kutip"><div id="kutip-garis">
+                    <div class="kutip-tanda" style="margin-top:20px;margin-bottom:-40px;">"</div>
+                    <div id="kutip-teks">Lorem ipsum dolor sit amet</div>
+                    <div class="kutip-tanda" style="margin-bottom:-20px;">"</div>
+                </div></div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="judul konten">
+            <div class="tengah-judul2" id="tahukah-teks">tahukah kamu?</div>
+            <div id="tahukah"></div>
+        </div>
+        <div class="container-12">
+            <div class="grid-12">
+                <div id="kotak-biru"><div id="biru-garis">
+                </div></div>
+            </div>
+            <div class="grid-4">
+				<div class="tahu-gambar"><img src="img/yes.png" /></div>
+				<div><a style="text-decoration:none;color:#333333" href=""><div class="tahu-teks">Selengkapnya</div></a></div>
+            </div>
+            <div class="grid-4"><div class="tahu-gambar"><img src="img/yes.png" /></div>
+				<div><a style="text-decoration:none;color:#333333" href=""><div class="tahu-teks">Selengkapnya</div></a></div></div>
+            <div class="grid-4"><div class="tahu-gambar"><img src="img/yes.png" /></div>
+				<div><a style="text-decoration:none;color:#333333" href=""><div class="tahu-teks">Selengkapnya</div></a></div></div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="judul konten">
+           <div class="tengah-judul2" id="kamu-teks">kamu dimana?</div>
+            <div id="kamu"></div>
+        </div>
+        <div class="container-12">
+            <div class="grid-12">
+				<div id="peta-full">
+					<div id="peta-tw"><a class="amap" href="http://twitter.com/idebeda"><img src="img/map-twitter.png" /></a></div>
+					<div id="peta-fb"><a class="amap" href="http://facebook.com/idebeda.piranti.cerdas"><img src="img/map-fb.png" /></a></div>
+					<div id="peta-cf"><a class="amap" href="http://cafe.idebeda.com"><img src="img/map-cafe.png" /></a></div>
+				</div>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+		<div class="konten-bawah" id="footer">
+			<div class="menu"></div>
+			<div class="kaki"></div>
+		</div>
+		<!-- script and etc -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            /*(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');*/
+            
+            $(function(){
+					// Check the initial Poistion of the Sticky Header
+					var stickyHeaderTop = $('#sticky-menu').offset().top;
+													 
+					$(window).scroll(function(){
+							if( $(window).scrollTop() > stickyHeaderTop+10 ) {
+									$('#sticky-menu').css({position: 'fixed', top: '0px', width:'100%'});
+									$('#header2').css('display', 'block');
+									//$('#logo').hide();
+									$('#logo-menu').fadeIn();
+							} else {
+									$('#sticky-menu').css({position: 'static', top: '0px'});
+									$('#header2').css('display', 'none');
+									//$('#logo').show();
+									$('#logo-menu').fadeOut();
+							}
+					});
+			  });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,257 @@
+/*********************************************************************************************
+
+Project : rwdgrid - responsive grid system for your next project
+URI: http://rwdgrid.com/
+Version: 1.0
+Author: Vineeth G S 
+Author URI: http://www.gsvineeth.com
+Github URI: https://github.com/gsvineeth/rwdgrid/
+
+**********************************************************************************************
+
+1.  Default / for Grid 1200px             
+2.  960px 
+3.  720px
+4.  lt 720px 
+
+
+**********************************************************************************************/
+
+
+/********************************************************************************************* 
+
+1.  Default / for Grid 1200px             
+
+*********************************************************************************************/   
+
+/* Style for demo REMOVE THIS SECTION */
+body{
+	background:#ffffff;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+p{
+	text-shadow:1px 1px 1px #FFF;
+}
+#header1{
+	
+}
+#logo-menu{
+	vertical-align:middle;
+	position:relative;
+	top:2px;
+}
+#sticky-menu{
+	z-index:9999;
+}
+.menu{
+	background:#e6e6e6;
+	height:40px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 18pt;
+}
+.list-menu{
+	float:right;
+	margin:4px 30px;
+}
+.list-menu a{
+	text-decoration: none;
+	color: #4f4f4f;
+}
+.list-menu a:hover{
+	color: #000000;
+}
+.judul{
+	height:70px;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	width: 100%;
+}
+.tengah-judul{
+	text-align: center;
+	line-height: 70px;
+	color: #FFFFFF;
+	font-size: 30pt;
+}
+.tengah-judul2{
+	text-align: center;
+	line-height: 80px;
+	width:400px;
+	margin:0 auto;
+	color: #f0f0f0;
+	font-size: 30pt;
+}
+.konten-atas{
+	margin-bottom:20px;
+}
+.konten-bawah{
+	margin-top:20px;
+}
+.konten{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.kaki{
+	background:#333333;
+	height:130px;
+}
+/********************************************************************************************* 
+
+HOME
+
+*********************************************************************************************/   
+#logo{
+	height:120px;
+}
+#img-logo{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+#logo-menu{
+	float:left;
+	position:relative;
+	left:50px;
+}
+#hai{
+	background:#ff0000;
+}
+#vidplayer{
+	height:400px;
+	margin:0 auto;
+}
+#kotak-kutip{
+	background: #e6e6e6;
+	padding:20px
+}
+#kutip-garis{
+	border-style: dashed;
+	border-color: #666666;
+	position:relative;
+}
+.kutip-tanda{
+	text-align:center;
+	font-size:60pt;
+	line-height:40pt;
+}
+#kutip-teks{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size:30pt;
+	text-align:center;
+	height:285px;
+	vertical-align:middle;
+	display:table-cell;
+}
+#tahukah-teks{
+	background:#ff6600;
+}
+#tahukah{
+	background:#ff6600;
+	position:relative;
+	height:60px;
+	top:-60px;
+	z-index:-1;
+}
+#kotak-biru{
+	background: #008080;
+	padding:20px;
+	width:800px;
+	margin:0 auto;
+}
+#biru-garis{
+	border-style: dashed;
+	border-size:5px;
+	border-color: #ffffff;
+	position:relative;
+	height:400px;
+}
+.tahu-gambar{
+	width:265px;
+	margin:25px auto;
+}
+.tahu-teks{
+	width:220px;
+	height:60px;
+	line-height:60px;
+	font-size:18pt;
+	margin:0 auto;
+	text-align:center;
+	vertical-align:middle;
+	background:#E6E6E6;
+	border-radius:15px;
+}
+.tahu-teks:hover{
+	color:#ffffff;
+	background:#333333;
+}
+.tahu-teks:link{
+	text-decoration: none;
+}
+#kamu-teks{
+	background:#008000;
+}
+#kamu{
+	background:#008000;
+	position:relative;
+	height:60px;
+	top:-60px;
+	z-index:-1;
+}
+#peta-full{
+	background-image:url('../img/map.png');
+	height:420px;
+	background-repeat : no-repeat;
+	width:915px;
+	margin:0 auto;
+}
+#peta-tw{
+	position:relative;
+	top:56px;
+	left:210px;
+}
+#peta-fb{
+	position:relative;
+	top:65px;
+	left:286px;
+}
+#peta-cf{
+	position:relative;
+	top:-295px;
+	left:505px;
+}
+.amap:hover{
+	opacity:0.5;
+}
+/********************************************************************************************* 
+
+2.  960px 
+
+*********************************************************************************************/  
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+
+ 
+}
+	
+
+/********************************************************************************************* 
+
+3.  720px 
+
+*********************************************************************************************/ 
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+ 
+}
+ 
+ 
+
+/********************************************************************************************* 
+
+4.  lt 720px 
+
+*********************************************************************************************/ 
+
+@media only screen and (max-width: 719px) {
+	.menu{
+		height:30px;
+		font-size: 12pt;
+	}
+}
